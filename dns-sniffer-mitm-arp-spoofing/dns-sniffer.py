@@ -31,7 +31,7 @@ def arp_scan(network, iface):
         try:
             vendor = MacLookup().lookup(mac)
         except VendorNotFoundError:
-            vendor = 'uncrecognized device'
+            vendor = 'unrecognized device'
         print(f'{Fore.BLUE}{ip}{Style.RESET_ALL} ({mac}, {vendor})')
     return input('\nPick a device IP: ')
 
